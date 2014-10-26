@@ -27,6 +27,9 @@
 #   - we add it to the running total
 #  - after we've looked at every number, the running total is the sum
 
+
+list_of_numbers = [93, 65, 87, 68, 2, 64, 36, 96, 45, 47]
+
 def sum(list_of_numbers)
   running_total = 0
   list_of_numbers.each do |number|
@@ -37,17 +40,12 @@ def sum(list_of_numbers)
 end
 
 # MEAN
-# ====
-# To find the mean of a set,
-#  - we sum up all the elements
-#  - then we divide the sum by the number of elements in the set
 
 def mean(list_of_numbers)
-  # Let's re-use the work we did above in the sum method
+  mean = sum(list_of_numbers) / (list_of_numbers.count)
 
-  # ====================
-  # Your code goes here.
-  # ====================
+return mean
+
 end
 
 # VARIANCE
@@ -60,11 +58,8 @@ end
 #  - the variance is the mean of the squared differences
 
 def variance(list_of_numbers)
-  # Let's re-use the work we did above in the mean method
-
-  # ====================
-  # Your code goes here.
-  # ====================
+  delta= number -(mean(list_of_numbers))
+  delta squared = delta * delta
 end
 
 # STANDARD DEVIATION
@@ -77,6 +72,9 @@ def standard_deviation(list_of_numbers)
   # Your code goes here.
   # ====================
 end
+
+puts mean(list_of_numbers)
+
 
 
 # Finally, everything above allows us to do:
