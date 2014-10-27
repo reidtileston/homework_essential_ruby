@@ -77,10 +77,10 @@ end
 #  - take the square root of the variance
 
 def standard_deviation(list_of_numbers)
-  standard_deviation=
+  standard_deviation= Math.sqrt(variance(list_of_numbers))
 end
 
-puts variance(list_of_numbers)
+puts standard_deviation(list_of_numbers)
 
 
 
