@@ -31,9 +31,17 @@ principal_amount = 200000.0
 #     Line 1 of this file.
 
 # ==============================================================
-# Your code goes here.
-# You shouldn't have to write code or change code anywhere else.
 
-# loan_quotes.each ...
+
+
 
 # ==============================================================
+
+# { "bank" => "Ash Street Bank", "annual_rate" => 0.04000}
+third_quote = loan_quotes[2]
+
+puts third_quote["annual_rate"]
+
+# puts "The monthly payment from Elm Street Bank will be $xyz."
+# puts "The monthly payment from Oak Street Bank will be $xyz."
+# puts "The monthly payment from Ash Street Bank will be $xyz."
